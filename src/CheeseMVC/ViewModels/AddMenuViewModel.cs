@@ -1,4 +1,4 @@
-﻿using CheeseMVC.Models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace CheeseMVC.ViewModels
 {
-    public class AddCategoryViewModel
+    public class AddMenuViewModel
     {
-        [Required(ErrorMessage = "Error need name")]
-        [Display(Name = "Category Name")]
+        [Required]
+        [Display(Name = "Menu Name")]
         public string Name { get; set; }
     }
 }
-
